@@ -59,7 +59,7 @@ body {
     width: 80%;
     max-width: 250px;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 90%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -171,6 +171,7 @@ h3 {
 
 .download-btn {
     display: block;
+    margin-left: 70%;
     text-align: center;
     background: #8b6f47;
     color: white;
@@ -257,5 +258,10 @@ h3 {
 
     h1 {
         font-size: 1.5rem;
+    }
+    .download-btn {
+       
+        margin-left: 50%;
+      
     }
 }
