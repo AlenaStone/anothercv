@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Calibri', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,13 +7,43 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #f3e6d4;
+    overflow-x: hidden;
+}
+
+/* Стиль для кнопок языка */
+.language-button {
+    padding: 10px 20px;
+    background-color: #8b6f47;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+}
+
+.language-button:hover {
+    background-color: #6b4d30;
+    transform: scale(1.1);
 }
 
 .container {
     display: flex;
-    width: 900px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
     background: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards; /* Анимация при загрузке */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .left-column {
@@ -22,11 +52,61 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .profile-photo {
-    width: 300px;
-    
+    width: 80%;
+    max-width: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1); /* Эффект увеличения фото профиля */
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #3d3d3d;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: white;
+    color: #8b6f47;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: #8b6f47;
+    color: white;
 }
 
 h1 {
@@ -42,20 +122,22 @@ h2 {
     margin: 5px 0;
 }
 
-.social-links a {
-    margin: 0 5px;
-    color: white;
-    font-size: 20px;
-}
-
 .right-column {
     width: 65%;
     padding: 30px;
     background: #fffaf2;
+    box-sizing: border-box;
 }
 
-.profile, .education, .experience, .skills, .languages {
+.profile,
+.education,
+.experience,
+.skills,
+.languages {
     margin-bottom: 20px;
+}
+.profile p{
+margin:-2% 0px;
 }
 
 h3 {
@@ -96,4 +178,83 @@ h3 {
     margin-top: 20px;
     width: 150px;
     border-radius: 5px;
+}
+
+.right-column {
+    width: 65%;
+    padding: 30px;
+    background: #fffaf2;
+}
+
+/* Стиль для элементов с анимацией */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.contact-button {
+    animation: bounce 1s ease-in-out infinite;
+    width: 50%;
+}
+
+.social-links a:hover {
+    color: #8b6f47;
+    animation: bounce 0.6s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .profile-photo {
+        width: 60%; /* Меньше фото на мобильных устройствах */
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
