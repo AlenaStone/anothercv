@@ -1,0 +1,99 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f3e6d4;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    width: 35%;
+    background: #d4b896;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.social-links a {
+    margin: 0 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.right-column {
+    width: 65%;
+    padding: 30px;
+    background: #fffaf2;
+}
+
+.profile, .education, .experience, .skills, .languages {
+    margin-bottom: 20px;
+}
+
+h3 {
+    background: #8b6f47;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.entry {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.year {
+    font-weight: bold;
+    text-align: center;
+    color: #8b6f47;
+    min-width: 50px;
+}
+
+.details {
+    flex: 1;
+    border-left: 3px solid #8b6f47;
+    padding-left: 15px;
+}
+
+.download-btn {
+    display: block;
+    text-align: center;
+    background: #8b6f47;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 5px;
+}
