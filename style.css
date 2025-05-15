@@ -14,6 +14,9 @@ header {
     position: relative;
     padding: 20px 0;
 }
+main{
+    margin: 2%;
+}
 
 /* Стиль для кнопок языка */
 .language-button {
@@ -26,7 +29,16 @@ header {
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin: 5px;
 }
-
+.translation-note {
+   margin-top: 2%;
+   
+  
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 .language-button:hover {
     background-color: #6b4d30;
     transform: scale(1.1);
@@ -345,21 +357,36 @@ h3 {
         margin-left: 50%;
     }
 
-    
-  .side-screens {
-    position: static;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
-  }
+    .side-screens {
+        position: static; /* Убираем фиксированное позиционирование */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 20px 0; /* Отступы для отделения от .container */
+        width: 100%; /* Занимает всю доступную ширину */
+        left: 0; /* Убираем смещение */
+    }
 
-  .side-screens img {
-    width: 45vw;
-    max-width: 200px;
-  }
+    .side-screens img {
+        width: 100%; /* Адаптивная ширина */
+        max-width: 300px; /* Ограничение максимальной ширины */
+        border-radius: 10px;
+    }
 
-  .side-screens a::after {
-    display: none;
-  }
+    .side-screens a::after {
+        display: none;
+    }
+
+    .screenshot-wrapper {
+        width: 100%;
+        max-width: 300px; /* Ограничение ширины контейнера */
+        display: flex;
+        justify-content: center;
+    }
+
+    .screenshot-wrapper img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
