@@ -16,7 +16,7 @@ I'm working my way from dual IT studies → ✨ support role ✨ → 💥 game d
 
 <h1 align="center"> 🌐 Live Version </h1>
 <p align="center">
-🔗 [Visit My CV Website](https://alenastone.github.io/anothercv)  
+   <a href ="https://alenastone.github.io/anothercv/"> 🔗 Visit My CV Website </a> 
 <br>(mobile-friendly, because duh 📱)
 
 ---
