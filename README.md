@@ -43,8 +43,9 @@ I'm working my way from dual IT studies → ✨ support role ✨ → 💥 game d
 </div>
 
 <h1 align="center"> ☕ Let's Connect  </h1>
-
-- [LinkedIn](https://www.linkedin.com/in/alena-vodopianova-723b32b0/)
+<p align="center">
+- <a href ="https://www.linkedin.com/in/alena-vodopianova-723b32b0"> Linkedin </a> <br>
 - Email: alonsoy75@gmail.com
 
 ---
+</p>
