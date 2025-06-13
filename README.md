@@ -37,7 +37,7 @@ _(mobile-friendly, because duh 📱)_
 
 ## 📸 Sneak Peek
 
-<img src="https://github.com/AlenaStone/anothercv/photo/PageExample.png" alt="preview" width="600"/>
+<img src="photo/PageExample.png" alt="preview" width="600" />
 
 ---
 
