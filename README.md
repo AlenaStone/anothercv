@@ -37,7 +37,7 @@ I'm working my way from dual IT studies → ✨ support role ✨ → 💥 game d
 
 <h1 align="center"> 📸 Sneak Peek </h1>
 <div img align="center">
-<img src="photo/PageExample.png"  alt="preview" width="600" />
+<img src="img/PageExample.png"  alt="preview" width="600" />
 
 ---
 </div>

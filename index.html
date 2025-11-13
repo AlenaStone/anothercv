@@ -1,119 +1,272 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alena Vodopianova</title>
+    <title>Alena Vodopianova | Software Design & Cloud Computing</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-
-<main>
-    <div class="translation-note">
-        <a href="index.html" class="language-button">DE</a>
-        <a href="english.html" class="language-button">ENG</a>
-    </div>
-    <div class="container">
-        <div class="left-column">
-            <div class="photo-container">
-                <img src="photo/Alena 5.jpg" alt="Alena Vodopianova" class="profile-photo">
-            </div>
-
-            <div class="contact-info">
-                <h1>Alena Vodopianova</h1>
-                <h3>Mobile Softwareentwicklung</h3>
-                <p class="data">26.03.1997</p>
-                <p>📞 +43 681 10 20 1900</p>
-                <p>📧 alonsoy75@gmail.com</p>
-                <p>📍 Graz, Österreich</p>
-
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/alena-vodopianova-723b32b0/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/AlenaStone" target="_blank">GitHub</a>
-                </div>
-
-                <a href="mailto:alonsoy75@gmail.com" class="contact-button">📩 Schreiben Sie mir</a>
-            </div>
-        </div>
-
-        <div class="right-column">
-            <section class="profile">
-                <h3>ÜBER MICH</h3>
-                <h2>Logik und Kreativität verbinden.</h2>
-                <p>Ich bin eine zielstrebige Person mit einem unstillbaren Wissensdurst und einer Leidenschaft für Programmierung. Neue Aufgaben sehe ich als spannende Herausforderungen, die meine Logik und Kreativität fördern. Mit großer Begeisterung widme ich sich der Weiterentwicklung meiner Fähigkeiten und stecke stets 100 % meiner Energie in meine Arbeit.</p>
-            </section>
-
-            <section class="education">
-                <h3>AUSBILDUNG</h3>
-                <div class="entry">
-                    <div class="year">Jetzt<br>-<br>2024</div>
-                    <div class="details">
-                        <strong>Bachelor Mobile Softwareentwicklung</strong><br>
-                        FH Joanneum
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="year">2016<br>-<br>2012</div>
-                    <div class="details">
-                        <strong>Volksschullehrerin</strong><br>
-                        Pädagogisches Kolleg Donskoi (Russland)
-                    </div>
-                </div>
-            </section>
-
-            <section class="experience">
-                <h3>BERUFSERFAHRUNG</h3>
-                <div class="entry">
-                    <div class="year">2024<br>-<br>2023</div>
-                    <div class="details">
-                        <strong>Kellnerin</strong><br>
-                        Terra&Mare<br>
-                        Öffnen/Schließen der Kasse, Kundenbedienung
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="year">2023<br>-<br>2021</div>
-                    <div class="details">
-                        <strong>Fahrradkurierin</strong><br>
-                        Lieferando<br>
-                        Kundenbedienung, Lebensmittellieferung per Fahrrad
-                    </div>
-                </div>
-            </section>
-
-            <section class="skills">
-                <h3>FÄHIGKEITEN</h3>
-                <p>Java (Grundlagen), CSS, HTML, SQLite, Wireshark (Grundlagen), Git (Grundlagen)</p>
-            </section>
-
-            <section class="languages">
-                <h3>SPRACHEN</h3>
-                <p>Deutsch (C1), Englisch (B1), Russisch (Muttersprache)</p>
-            </section>
-
-            <a href="ALENA VODOPIANOVA.pdf" download class="download-btn">Lebenslauf herunterladen</a>
-        </div>
+    <!-- Language Switch -->
+    <div id="lang-switch">
+        <button onclick="setLang('en')" class="lang-btn">EN</button>
+        <button onclick="setLang('de')" class="lang-btn">DE</button>
     </div>
 
-    <!-- 🔹 Скриншоты под .container -->
-    <div class="side-screens">
-        <div class="screenshot-wrapper">
-            <a href="https://alenastone.github.io/newMainecoonWebseit/index.html" target="_blank">
-                <img src="photo/maincoone.png" alt="Mainecoon Screenshot">
-                <div class="overlay">Website ansehen</div>
+    <!-- Navigation bar -->
+    <nav id="navbar">
+        <ul class="nav-list">
+            <li><a href="#about" data-en="About" data-de="Über mich">About</a></li>
+            <li><a href="#skills" data-en="Skills" data-de="Fähigkeiten">Skills</a></li>
+            <li><a href="#projects" data-en="Projects" data-de="Projekte">Projects</a></li>
+            <li><a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Alena Vodopianova</h1>
+            <p class="hero-subtitle" data-en="Software Design & Cloud Computing Student"
+                data-de="Studentin Software Design & Cloud Computing">
+                Software Design & Cloud Computing Student
+            </p>
+            <a href="#about" class="start-button" data-en="Start Journey" data-de="Reise starten">
+                Start Journey
             </a>
         </div>
-        <div class="screenshot-wrapper">
-            <a href="https://c71n01.yaka.fh-joanneum.at/index.html" target="_blank">
-                <img src="photo/umwelt.png" alt="Umwelt Screenshot">
-                <div class="overlay">Website ansehen</div>
-            </a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title" data-en="About Me" data-de="Über mich">About Me</h2>
+        <div class="section-content">
+            <img src="img/Profil.jpg" alt="Alena Vodopianova" class="about-photo">
+            <p data-en="
+Hi! I'm Alena, a Software Design & Cloud Computing student at FH Joanneum in Graz.
+Programming is not just part of my studies — it’s my hobby and something I genuinely enjoy. I love figuring out how things work: building small backends with Java or beginner-level Node.js, creating clean frontends and connecting everything with a database.
+
+I’m inspired by creative ideas and game mechanics, so every task feels like a new quest. I’m eager to gain real work experience to deepen my skills, learn professional practices and grow as a developer.
+Curious, fast-learning and always experimenting — that’s me.
+My hobby became my profession, and this is just the beginning! 😎
+" data-de="
+Hallo! Ich bin Alena, Studentin im Studiengang Software Design & Cloud Computing an der FH Joanneum in Graz.
+Programmieren ist für mich nicht nur Studium – es ist ein Hobby und etwas, das mir wirklich Spaß macht. Ich lerne gern, wie Dinge funktionieren: kleine Backends mit Java oder grundlegendes Node.js zu bauen, ein sauberes Frontend zu gestalten und alles mit einer Datenbank zu verbinden.
+
+Kreative Ideen und Spielmechaniken inspirieren mich, deshalb fühlt sich jede Aufgabe wie ein neuer Quest an. Ich möchte Berufserfahrung sammeln, um meine Fähigkeiten zu vertiefen, professionelle Methoden zu lernen und als Entwicklerin zu wachsen.
+Neugierig, schnell lernend und immer experimentierfreudig – das bin ich.
+Mein Hobby wurde zu meinem Beruf, und das ist erst der Anfang! 😎
+">
+            </p>
         </div>
-    </div>
-</main>
-<script src="script.js"></script>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title" data-en="Skills" data-de="Fähigkeiten">Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <span class="skill-name">Java / JavaFX</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="80%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Node.js </span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="55%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">HTML / CSS / JavaScript</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="75%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">SQL (SQLite, PostgreSQL)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="65%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Spring Boot</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="20%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="30%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Git & CLI</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="70%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">German (C1)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">English (B1)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="60%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Russian (Native)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="100%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title" data-en="Projects" data-de="Projekte">Projects</h2>
+        <div class="projects-grid">
+
+
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3 class="project-title">Virtual Tamagotchi</h3>
+                <p class="project-desc"
+                    data-en="A JavaFX desktop application inspired by the classic Tamagotchi game. Includes language selection, a Pomodoro mini-window and persistent state."
+                    data-de="Eine JavaFX-Desktopanwendung, inspiriert vom klassischen Tamagotchi-Spiel. Beinhaltet Sprachauswahl, ein Pomodoro-Minifenster und persistente Speicherung.">
+                </p>
+                <ul class="project-tags">
+                    <li>JavaFX</li>
+                    <li>OOP</li>
+                    <li>Persistence</li>
+                </ul>
+                <a class="project-link" href="https://alena-stone.itch.io/tamagotchi-pomodoro-windows" target="_blank"
+                    rel="noopener">View on Itch</a>
+            </div>
+
+            <!-- Project 2 -->
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3 class="project-title">Weather App</h3>
+
+                <p class="project-desc"
+                    data-en="A cozy desktop weather app inspired by WITCH aesthetics. Built with HTML, CSS and JavaScript using Electron. Shows current weather, animated themed backgrounds and saves user preferences."
+                    data-de="Eine gemütliche Desktop-Wetter-App im WITCH-Stil. Erstellt mit HTML, CSS und JavaScript unter Verwendung von Electron. Zeigt aktuelles Wetter, animierte thematische Hintergründe und speichert Benutzerpräferenzen.">
+                </p>
+
+                <ul class="project-tags">
+                    <li>Electron</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                </ul>
+
+                <a class="project-link" href="https://github.com/AlenaStone/WitchWeatherApp" target="_blank"
+                    rel="noopener">
+                    View on GitHub
+                </a>
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <h3 class="project-title">ShinyLeo Tribe</h3>
+                <p class="project-desc"
+                    data-en="A static website for a Maine Coon breeder with a playful design and multilingual front-end but no backend logic."
+                    data-de="Eine statische Website für eine Maine-Coon-Zucht mit spielerischem Design und mehrsprachigem Frontend, jedoch ohne Backend-Logik.">
+                </p>
+                <ul class="project-tags">
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <a class="project-link" href="https://alenastone.github.io/newMainecoonWebseit/" target="_blank"
+                    rel="noopener">Visit Site</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <h3 class="project-title">Environmental Cleanup Site</h3>
+                <p class="project-desc"
+                    data-en="A conceptual website (university project) that promotes environmental awareness and provides ideas on how to make the world cleaner. It uses playful visuals and encourages community action."
+                    data-de="Eine konzeptionelle Website (Hochschulprojekt), die Umweltbewusstsein fördert und Ideen bietet, wie man die Welt sauberer machen kann. Mit verspielten Visuals und Fokus auf gemeinschaftliches Handeln.">
+                </p>
+                <ul class="project-tags">
+                    <li>Web</li>
+                    <li>Concept</li>
+                </ul>
+                <a class="project-link" href="https://c71n01.yaka.fh-joanneum.at/" target="_blank" rel="noopener">View
+                    Concept</a>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card">
+                <h3 class="project-title">Quest &amp; Mess
+                    <span style="font-size: 0.8rem; color:#999;">(in development)</span>
+                </h3>
+
+                <p class="project-desc"
+                    data-en="A web application built with JavaScript, Node.js and PostgreSQL that connects mentors and learners through quests. The project is designed to turn household tasks into a gamified experience to make daily life easier and more motivating. Currently in active development."
+                    data-de="Eine Webanwendung mit JavaScript, Node.js und PostgreSQL, die Mentor:innen und Lernende über Quests verbindet. Das Projekt verwandelt alltägliche Haushaltsaufgaben in ein spielerisches Erlebnis, um den Alltag einfacher und motivierender zu machen. Derzeit in aktiver Entwicklung.">
+                </p>
+
+                <ul class="project-tags">
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>PostgreSQL</li>
+                </ul>
+
+                <a class="project-link" href="https://github.com/AlenaStone/questandmess" target="_blank"
+                    rel="noopener">
+                    View on GitHub
+                </a>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title" data-en="Contact" data-de="Kontakt">Contact</h2>
+        <p class="contact-text"
+            data-en="Let's connect! Reach out for collaboration, job opportunities or just to say hi 👋."
+            data-de="Lass uns in Kontakt treten! Melde dich für Zusammenarbeit, Jobmöglichkeiten oder einfach nur zum Hallo sagen 👋.">
+            Let's connect! Reach out for collaboration, job opportunities or just to say hi 👋.
+        </p>
+        <div class="contact-icons">
+            <a href="mailto:alonsoy75@gmail.com" class="contact-icon" title="Email">📧</a>
+            <a href="https://www.linkedin.com/in/alena-vodopianova-723b32b0/" target="_blank" rel="noopener"
+                class="contact-icon" title="LinkedIn">👤</a>
+            <a href="https://github.com/AlenaStone" target="_blank" rel="noopener" class="contact-icon"
+                title="GitHub">💻</a>
+            <a href="https://alena-stone.itch.io/" target="_blank" rel="noopener" class="contact-icon"
+                title="Itch.io">🎮</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Alena Vodopianova. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
