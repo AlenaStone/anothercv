@@ -373,7 +373,7 @@ a:hover {
 
     .nav-list {
         gap: 10px;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -381,7 +381,7 @@ a:hover {
 
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.5;
     }
 
     .hero-subtitle {
@@ -389,7 +389,7 @@ a:hover {
     }
 
     .start-button {
-        font-size: 0.9rem;
+        font-size: 0.5rem;
         padding: 10px 20px;
     }
 
@@ -398,11 +398,11 @@ a:hover {
     }
 
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.0rem;
     }
 
     .section-content p {
-        font-size: 0.95rem;
+        font-size: 0.55rem;
     }
 
     #lang-switch {
@@ -412,13 +412,13 @@ a:hover {
     }
 
     .lang-btn {
-        font-size: 0.7rem;
+        font-size: 0.3rem;
         padding: 4px 10px;
     }
 
     .about-photo {
-        width: 220px;
-        height: 220px;
+        width: 150px;
+        height: 150px;
     }
 
     .contact-icons {
@@ -426,6 +426,37 @@ a:hover {
     }
 
     .contact-icon {
-        font-size: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .skill-name {
+        font-size: 0.8rem;
+    }
+
+    .hero-title {
+        font-size: 1rem;
+    }
+
+    .project-title {
+        font-size: 0.8rem;
+    }
+
+    .project-desc {
+        font-size: 0.5rem;
+    }
+
+    .project-tags li {
+        font-size: 0.5rem;
+
+    }
+
+    .project-link {
+        font-size: 0.5rem;
+    }
+    .contact-text {
+    font-size: 1rem;
+}
+.footer {
+    font-size: 1rem;
     }
 }
